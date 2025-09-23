@@ -1,0 +1,95 @@
+/* style.css — external styles only (no inline styles anywhere) */
+
+/* Use the same font-family used by the original template */
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+/* limit page width and center the layout just like the original */
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* avatar image sizing (replaces inline width:100%) */
+.profile-img {
+  width: 100%;
+  display: block;
+}
+
+/* make the name text area readable over the image (similar to original) */
+.name-block h2 {
+  margin: 0;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.85);
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* small spacing adjustments inside left column */
+.contact-block {
+  padding: 16px;
+}
+
+/* skill bars: widths are set using utility classes (no inline styles) */
+.skillbar { margin-bottom: 12px; }
+
+/* width classes to replicate original percentages */
+.p90 { width: 90%; }
+.p80 { width: 80%; }
+.p75 { width: 75%; }
+.p50 { width: 50%; }
+
+/* ensure inner containers show the percent text centered */
+.skillbar .w3-container {
+  line-height: 26px;
+  color: white;
+}
+
+/* language bars — heights and widths moved to CSS */
+.langbar { margin-bottom: 12px; height: 24px; }
+.l100 { width: 100%; height: 100%; }
+.l55  { width: 55%; height: 100%; }
+.l25  { width: 25%; height: 100%; }
+
+/* keep consistent spacing in right column cards */
+.job, .edu {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* footer styling similar to the original w3schools footer block */
+.footer {
+  margin-top: 20px;
+  padding: 18px 12px;
+  color: #ffffff;
+}
+
+/* social icons styling */
+.social-icons {
+  margin: 8px 0;
+}
+.social-icons a {
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: inline-block;
+  transition: opacity 0.15s ease;
+}
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
+/* small utility: ensure tags inside content have correct spacing */
+.w3-tag {
+  vertical-align: middle;
+}
+
+/* responsive tweak: ensure avatar name overlay sits nicely on small screens */
+@media screen and (max-width: 600px) {
+  .name-block h2 {
+    font-size: 1.2rem;
+    padding: 6px 8px;
+  }
+}
