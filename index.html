@@ -1,171 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>W3.CSS CV Template — Replica</title>
-
-  <!-- W3.CSS (original template uses this) -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
-
-  <!-- Google Font used by the original -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
-
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-  <!-- External stylesheet (no inline styles anywhere) -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS PROJECT /Template Replica</title>
   <link rel="stylesheet" href="firstproject.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-<body class="w3-light-grey">
-
-  <!-- Page Container -->
-  <div class="w3-content page-container w3-margin-top">
-
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-
-      <!-- Left Column -->
-      <div class="w3-third">
-        <div class="w3-white w3-text-grey w3-card-4">
-          <div class="w3-display-container">
-            <!-- Avatar (Same image path used by W3Schools example) -->
-            <img src="IMAGES/profile.jpg" alt="Avatar" class="profile-img" />
-            <div class="w3-display-bottomleft w3-container name-block">
-              <h2>Jane Doe</h2>
-            </div>
-          </div>
-
-          <div class="w3-container contact-block">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
-            <hr />
-
-            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-
-            <p>Adobe Photoshop</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small skillbar">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal p90">90%</div>
-            </div>
-
-            <p>Photography</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small skillbar">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal p80">80%</div>
-            </div>
-
-            <p>Illustrator</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small skillbar">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal p75">75%</div>
-            </div>
-
-            <p>Media</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small skillbar">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal p50">50%</div>
-            </div>
-
-            <br />
-
-            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-
-            <p>English</p>
-            <div class="w3-light-grey w3-round-xlarge langbar">
-              <div class="w3-round-xlarge w3-teal l100"></div>
-            </div>
-
-            <p>Spanish</p>
-            <div class="w3-light-grey w3-round-xlarge langbar">
-              <div class="w3-round-xlarge w3-teal l55"></div>
-            </div>
-
-            <p>German</p>
-            <div class="w3-light-grey w3-round-xlarge langbar">
-              <div class="w3-round-xlarge w3-teal l25"></div>
-            </div>
-
-            <br />
-          </div>
-        </div>
-        <br />
-        <!-- End Left Column -->
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="IMAGES/profile.jpg" alt="Jane Doe" />
+        <div class="profile-name">Jane Doe</div>
       </div>
-
-      <!-- Right Column -->
-      <div class="w3-twothird">
-
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16">
-            <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
-          </h2>
-
-          <div class="w3-container job">
-            <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-            <hr />
-          </div>
-
-          <div class="w3-container job">
-            <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-            <hr />
-          </div>
-
-          <div class="w3-container job">
-            <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-        </div>
-
-        <div class="w3-container w3-card w3-white">
-          <h2 class="w3-text-grey w3-padding-16">
-            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
-          </h2>
-
-          <div class="w3-container edu">
-            <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-            <p>Web Development! All I need to know in one place</p>
-            <hr />
-          </div>
-
-          <div class="w3-container edu">
-            <h5 class="w3-opacity"><b>London Business School</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-            <p>Master Degree</p>
-            <hr />
-          </div>
-
-          <div class="w3-container edu">
-            <h5 class="w3-opacity"><b>School of Coding</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-            <p>Bachelor Degree</p>
-          </div>
-        </div>
-
+      <div class="info">
+        <p><i class="fa-solid fa-briefcase"></i> Designer</p>
+        <p><i class="fa-solid fa-house"></i> London, UK</p>
+        <p><i class="fa-solid fa-envelope"></i> ex@mail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 1224435534</p>
       </div>
-      <!-- End Right Column -->
-
-    </div>
-    <!-- End Grid -->
-
-    <!-- Footer -->
-    <footer class="w3-container w3-teal w3-center footer">
-      <p>Find me on social media.</p>
-      <div class="social-icons">
-        <a href="#" aria-label="facebook" class="fa fa-facebook-official"></a>
-        <a href="#" aria-label="twitter" class="fa fa-twitter"></a>
-        <a href="#" aria-label="linkedin" class="fa fa-linkedin"></a>
-        <a href="#" aria-label="instagram" class="fa fa-instagram"></a>
+      <hr />
+      <div class="skills">
+        <h3><i class="fa-solid fa-asterisk"></i> Skills</h3>
+        <p>Adobe Photoshop</p>
+        <div class="progress"><div style="width:90%"></div></div>
+        <p>Photography</p>
+        <div class="progress"><div style="width:80%"></div></div>
+        <p>Illustrator</p>
+        <div class="progress"><div style="width:75%"></div></div>
+        <p>Media</p>
+        <div class="progress"><div style="width:50%"></div></div>
       </div>
-      <p class="powered-by">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noopener">w3.css</a></p>
-    </footer>
+      <hr />
+      <div class="languages">
+        <h3><i class="fa-solid fa-earth-americas"></i> Languages</h3>
+        <p>English</p>
+        <div class="progress"><div style="width:100%"></div></div>
+        <p>Spanish</p>
+        <div class="progress"><div style="width:55%"></div></div>
+        <p>German</p>
+        <div class="progress"><div style="width:25%"></div></div>
+      </div>
+    </aside>
+    <!-- Main content -->
+    <main class="main">
+      <section class="card">
+        <h2><i class="fa-solid fa-suitcase"></i> Work Experience</h2>
+        <div class="job">
+          <h3>Front End Developer / w3schools.com</h3>
+          <p class="date"><i class="fa-regular fa-calendar"></i> Jan 2015 - <span class="current">Current</span></p>
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic.</p>
+        </div>
+        <div class="job">
+          <h3>Web Developer / something.com</h3>
+          <p class="date"><i class="fa-regular fa-calendar"></i> Mar 2012 - Dec 2014</p>
+          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic.</p>
+        </div>
+        <div class="job">
+          <h3>Graphic Designer / designsomething.com</h3>
+          <p class="date"><i class="fa-regular fa-calendar"></i> Jun 2010 - Mar 2012</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </section>
 
+      <section class="card">
+        <h2><i class="fa-solid fa-certificate"></i> Education</h2>
+        <div class="edu">
+          <h3>W3Schools.com</h3>
+          <p class="date"><i class="fa-regular fa-calendar"></i> Forever</p>
+          <p>Web Development! All I need to know in one place</p>
+        </div>
+        <div class="edu">
+          <h3>London Business School</h3>
+          <p class="date"><i class="fa-regular fa-calendar"></i> 2013 - 2015</p>
+          <p>Master Degree</p>
+        </div>
+        <div class="edu">
+          <h3>School of Coding</h3>
+          <p class="date"><i class="fa-regular fa-calendar"></i> 2010 - 2013</p>
+          <p>Bachelor Degree</p>
+        </div>
+      </section>
+    </main>
   </div>
-  <!-- End Page Container -->
 
+  <!-- Footer -->
+  <footer>
+    <p>Find me on social media.</p>
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p class="credit">Powered by Nelson and<a href="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noopener">w3.css</a> </p>
+  </footer>
 </body>
 </html>

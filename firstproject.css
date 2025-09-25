@@ -1,95 +1,155 @@
-/* style.css — external styles only (no inline styles anywhere) */
 
-/* Use the same font-family used by the original template */
-html, body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f1f1f1;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* limit page width and center the layout just like the original */
-.page-container {
-  max-width: 1400px;
-  margin: 0 auto;
+/* Layout */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+  gap: 20px;
+}
+.sidebar {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+.main {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-/* avatar image sizing (replaces inline width:100%) */
-.profile-img {
+/* Profile section */
+.profile {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.profile img {
   width: 100%;
+  height: auto;
   display: block;
 }
-
-/* make the name text area readable over the image (similar to original) */
-.name-block h2 {
-  margin: 0;
+.profile-name {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  background: rgba(255, 255, 255, 0.185);
   padding: 8px 12px;
-  background: rgba(255, 255, 255, 0.85);
-  display: inline-block;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #2b2b2b;
+  max-width: calc(100% - 32px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* Info, Skills, Languages */
+.info p, .skills p, .languages p {
+  margin: 10px 0;
+}
+.info i {
+  margin-right: 8px;
+  color: teal;
+}
+.skills h3, .languages h3 {
+  margin: 20px 0 10px;
+  color: teal;
+}
+.progress {
+  background: #ddd;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.progress div {
+  background: teal;
+  height: 8px;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+.card h2 {
+  margin-bottom: 20px;
+  color: teal;
+}
+.job, .edu {
+  margin-bottom: 20px;
+}
+.job h3, .edu h3 {
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+.date {
+  color: teal;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.date i {
+  margin-right: 6px;
+}
+.current {
+  background: teal;
+  color: #fff;
+  padding: 2px 6px;
   border-radius: 4px;
 }
 
-/* small spacing adjustments inside left column */
-.contact-block {
-  padding: 16px;
-}
-
-/* skill bars: widths are set using utility classes (no inline styles) */
-.skillbar { margin-bottom: 12px; }
-
-/* width classes to replicate original percentages */
-.p90 { width: 90%; }
-.p80 { width: 80%; }
-.p75 { width: 75%; }
-.p50 { width: 50%; }
-
-/* ensure inner containers show the percent text centered */
-.skillbar .w3-container {
-  line-height: 26px;
+/* Footer */
+footer {
+  background: teal;
   color: white;
-}
-
-/* language bars — heights and widths moved to CSS */
-.langbar { margin-bottom: 12px; height: 24px; }
-.l100 { width: 100%; height: 100%; }
-.l55  { width: 55%; height: 100%; }
-.l25  { width: 25%; height: 100%; }
-
-/* keep consistent spacing in right column cards */
-.job, .edu {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-/* footer styling similar to the original w3schools footer block */
-.footer {
+  text-align: center;
+  padding: 20px;
   margin-top: 20px;
-  padding: 18px 12px;
-  color: #ffffff;
 }
-
-/* social icons styling */
-.social-icons {
-  margin: 8px 0;
-}
-.social-icons a {
+footer .socials a {
+  color: white;
   margin: 0 8px;
+  font-size: 18px;
   text-decoration: none;
-  font-size: 20px;
-  color: #ffffff;
-  display: inline-block;
-  transition: opacity 0.15s ease;
 }
-.social-icons a:hover {
-  opacity: 0.8;
+footer .socials a:hover {
+  color: #ddd;
 }
-
-/* small utility: ensure tags inside content have correct spacing */
-.w3-tag {
-  vertical-align: middle;
+.credit {
+  margin-top: 10px;
+  font-size: 14px;
 }
 
-/* responsive tweak: ensure avatar name overlay sits nicely on small screens */
-@media screen and (max-width: 600px) {
-  .name-block h2 {
-    font-size: 1.2rem;
-    padding: 6px 8px;
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .profile-name {
+    font-size: 16px;
+    left: 12px;
+    bottom: 12px;
+    padding: 6px 10px;
+  }
+}
+@media (max-width: 360px) {
+  .profile-name {
+    white-space: normal;
   }
 }
